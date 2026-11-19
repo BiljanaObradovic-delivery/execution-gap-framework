@@ -11,13 +11,13 @@ Every regulated program — regardless of technology stack, jurisdiction, or sca
 
 | Layer | RWA Tokenization | Regulated Fintech / Core Banking |
 |---|---|---|
-| **L0 — Operating Model** | Business case, board approval, governance, RACI, OKR framework, budget management, custody model selection | Business case, wave structure, country sequencing, governance, RACI, OKR framework, budget management |
-| **L1 — Regulatory & Legal** | MiCA/CASP, DORA, eWpG, BaFin/NCA licensing, MLRO appointment, AML program, multi-jurisdiction mapping | PSD2, per-country regulatory mapping, local banking law, DORA, AML program, MLRO |
-| **L2 — Structure & Contracts** | SPV incorporation, legal opinion, token classification, vendor MSA, SLA framework, decision tracking | Vendor contracts, SLA framework, integration agreements, decision tracking, assumption log |
-| **L3 — Technical Architecture** | SC design, oracle selection, custody architecture, chain configuration, KYC/KYT integration, API governance | Core system design, middleware strategy, API architecture, vendor governance, KYC/AML pipeline |
-| **L4 — Build & Audit** | SC development, SC audit #1, pen test, SAST/DAST, DORA ICT third-party register, ISO 27001 gap | Core build, per-country integration across core banking system and middleware, pen test, DORA ICT, security audit |
-| **L5 — Integration & Testing** | End-to-end testing, settlement, PoR baseline, SC audit #2, UAT, rollback plan, gate sign-off | UAT per wave, end-to-end integration, gate sign-off, rollback plan, regulatory test filing |
-| **L6 — Go-Live & Operations** | G-OPS gate, hypercare, KPI/KRI monitoring, change & incident management, DORA monitoring, regulatory reporting | Wave activation, hypercare, BAU transition, KPI/KRI monitoring, change & incident management |
+| **L0 — Strategy & Value Definition** | Business case, board approval, governance, RACI, OKR framework, budget management, custody model selection | Business case, wave structure, country sequencing, governance, RACI, OKR framework, budget management |
+| **L1 — Regulatory & Business Foundation** | MiCA/CASP, DORA, eWpG, BaFin/NCA licensing, MLRO appointment, AML program, multi-jurisdiction mapping, SPV incorporation, legal opinion, token classification | PSD2, per-country regulatory mapping, local banking law, DORA, AML program, MLRO |
+| **L2 — Solution Architecture** | SC design, oracle selection, custody architecture, chain configuration, API governance, vendor MSA, SLA framework, decision tracking | Core system design, middleware strategy, API architecture, vendor contracts, SLA framework, integration agreements, decision tracking, assumption log |
+| **L3 — Build & Integration** | SC development, KYC/KYT integration, SAST, platform and custody integration build | Core build, per-country integration across core banking system and middleware, KYC/AML pipeline, vendor governance |
+| **L4 — Validation & Control** | SC audit #1 and #2, pen test, DAST, DORA ICT third-party register, ISO 27001 gap, end-to-end testing, settlement, PoR baseline, UAT | Pen test, DORA ICT, security audit, UAT per wave, end-to-end integration |
+| **L5 — Readiness & Transition** | Rollback plan, gate sign-off, G-OPS gate, go-live readiness evidence | Gate sign-off, rollback plan, regulatory test filing, wave readiness |
+| **L6 — Operational Execution** | Hypercare, KPI/KRI monitoring, change & incident management, DORA monitoring, regulatory reporting | Wave activation, hypercare, BAU transition, KPI/KRI monitoring, change & incident management |
 | **L7 — Continuous Governance** | Vendor SLA management, regulatory reporting calendar, audit schedule, incident & change management, new project initiation from operations | Ongoing vendor governance, regulatory reporting, audit calendar, incident management, operational continuity planning |
 
 ---

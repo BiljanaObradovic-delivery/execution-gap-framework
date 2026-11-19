@@ -34,10 +34,10 @@ the first regulatory question, and the first operational incident.
 
 | Layer | What is missing | When it becomes a problem |
 |---|---|---|
-| L0 — Operating Model | Decision rights undefined. RACI not operationalized. | First cross-functional blocker |
-| L1 — Regulatory & Legal | Compliance embedded in legal, not in delivery. | First NCA question post-licensing |
-| L2 — Structure & Contracts | SLA framework exists. Escalation procedure does not. | First vendor underperformance |
-| L6 — Go-Live & Operations | Hypercare plan missing. KPI/KRI not defined. | First 30 days post go-live |
+| L0 — Strategy & Value Definition | Decision rights undefined. RACI not operationalized. | First cross-functional blocker |
+| L1 — Regulatory & Business Foundation | Compliance embedded in legal, not in delivery. | First NCA question post-licensing |
+| L2 — Solution Architecture | SLA framework exists. Escalation procedure does not. | First vendor underperformance |
+| L6 — Operational Execution | Hypercare plan missing. KPI/KRI not defined. | First 30 days post go-live |
 | L7 — Continuous Governance | No audit calendar. No vendor SLA review cadence. | First regulatory audit |
 
 ---

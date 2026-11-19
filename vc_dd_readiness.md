@@ -27,13 +27,13 @@ Gaps at any layer are delivery risks, not technical risks.
 
 | Layer | What DD should verify |
 |---|---|
-| L0 — Operating Model | Is there a board-approved governance structure? Are decision rights defined? |
-| L1 — Regulatory & Legal | Is the CASP/VASP license confirmed or on a credible timeline? Is the MLRO appointed? |
-| L2 — Structure & Contracts | Are vendor MSAs signed? Is the SLA framework operational? |
-| L3 — Technical Architecture | Is the custody architecture documented and auditable? Are oracle dependencies mapped? |
-| L4 — Build & Audit | Has SC Audit #1 been completed? Is the DORA ICT third-party register in place? |
-| L5 — Integration & Testing | Have the three mandatory sign-offs been obtained? Is the rollback plan documented? |
-| L6 — Go-Live & Operations | Has the G-OPS gate been passed? Is the hypercare plan active? |
+| L0 — Strategy & Value Definition | Is there a board-approved governance structure? Are decision rights defined? |
+| L1 — Regulatory & Business Foundation | Is the CASP/VASP license confirmed or on a credible timeline? Is the MLRO appointed? |
+| L2 — Solution Architecture | Is the custody architecture documented and auditable? Are oracle dependencies mapped? Are vendor MSAs signed and is the SLA framework operational? |
+| L3 — Build & Integration | Has the build been accepted against agreed criteria? Are KYC/KYT and core integrations complete? |
+| L4 — Validation & Control | Has SC Audit #1 been completed? Is the DORA ICT third-party register in place? |
+| L5 — Readiness & Transition | Have the three mandatory sign-offs been obtained? Is the rollback plan documented? |
+| L6 — Operational Execution | Has the G-OPS gate been passed? Is the hypercare plan active? |
 | L7 — Continuous Governance | Is there an operational continuity structure in place post go-live? |
 
 ---
