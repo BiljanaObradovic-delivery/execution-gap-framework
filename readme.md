@@ -12,7 +12,7 @@ That gap has a name. This is the framework built around closing it.
 ## What's Here
 
 **[RWA Tokenization →](./rwa/)**
-7-layer delivery framework for regulated tokenization programs.
+8-layer framework (L0–L7) for regulated tokenization programs.
 MiCA, DORA, eWpG, CASP licensing, custody architecture, 
 post-licensing operational setup.
 
@@ -20,12 +20,8 @@ post-licensing operational setup.
 Multi-country, multi-wave core banking delivery framework.
 Gate governance, integration health, vendor coordination.
 
-**[Execution Gap Framework — 7 Layers →](./ExecutionGapFramework_7Layers.md)**
-Layer structure across RWA and fintech — with gate logic,
-KPI/KRI definitions, vendor governance, and failure modes.
-
-**[Methodology →](./METHODOLOGY.md)**
-Context-First delivery philosophy. Applies across both contexts.
+**[Execution Gap Framework™ — 8 Operational Layers →](./ExecutionGapFramework_Layers.md)**
+Layer structure (L0–L7) across RWA and fintech — core objective and scope of each layer.
 
 **[AI Intelligence Layer →](./agents.md)**
 26-agent architecture for operational governance, escalation,
@@ -45,7 +41,8 @@ from document exercises into orchestrated, real-time workflows.
 
 ---
 
-*RWA Execution Gap Methodology © Biljana Obradović · Concept360 · 2026*
+*Execution Gap Framework™ © Biljana Obradović · Concept360 · 2026*
+→ [biljana.obradovic@concept360.io](mailto:biljana.obradovic@concept360.io)
 → [biljana.obradovic@concept360.rs](mailto:biljana.obradovic@concept360.rs)
 → [linkedin.com/in/biljana-obradovic-28390a8](https://linkedin.com/in/biljana-obradovic-28390a8)
-→ [concept360.rs](https://biljanaobradovic-delivery.github.io/execution-gap-framework/)
+→ [concept360.io](https://concept360.io)
