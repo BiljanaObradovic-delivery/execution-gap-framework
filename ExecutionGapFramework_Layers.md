@@ -1,9 +1,9 @@
-# The Execution Gap Framework — 7 Operational Layers
+# The Execution Gap Framework™ — 8 Operational Layers
 **Concept360 · Biljana Obradović · © 2026**
 
 Applied to RWA tokenization and regulated fintech delivery programs.
 
-Every regulated program — regardless of technology stack, jurisdiction, or scale — must address seven operational layers. The sequence matters. Skipping a layer doesn't remove it; it relocates the problem to a later, more expensive stage.
+Every regulated program — regardless of technology stack, jurisdiction, or scale — must address eight operational layers, L0 to L7. The sequence matters. Skipping a layer doesn't remove it; it relocates the problem to a later, more expensive stage.
 
 ---
 
@@ -18,7 +18,7 @@ Every regulated program — regardless of technology stack, jurisdiction, or sca
 | **L4 — Build & Audit** | SC development, SC audit #1, pen test, SAST/DAST, DORA ICT third-party register, ISO 27001 gap | Core build, per-country integration across core banking system and middleware, pen test, DORA ICT, security audit |
 | **L5 — Integration & Testing** | End-to-end testing, settlement, PoR baseline, SC audit #2, UAT, rollback plan, gate sign-off | UAT per wave, end-to-end integration, gate sign-off, rollback plan, regulatory test filing |
 | **L6 — Go-Live & Operations** | G-OPS gate, hypercare, KPI/KRI monitoring, change & incident management, DORA monitoring, regulatory reporting | Wave activation, hypercare, BAU transition, KPI/KRI monitoring, change & incident management |
-| **L7 — Post-Launch, Steady State & Continuity** | Vendor SLA management, regulatory reporting calendar, audit schedule, incident & change management, new project initiation from operations | Ongoing vendor governance, regulatory reporting, audit calendar, incident management, operational continuity planning |
+| **L7 — Continuous Governance** | Vendor SLA management, regulatory reporting calendar, audit schedule, incident & change management, new project initiation from operations | Ongoing vendor governance, regulatory reporting, audit calendar, incident management, operational continuity planning |
 
 ---
 
@@ -28,7 +28,7 @@ Every regulated program — regardless of technology stack, jurisdiction, or sca
 The foundation — business case, operating model, RACI, OKR framework, and budget management — must be defined before any technical work begins. Most programs fail here, not at L4. A weak L0 means every subsequent layer inherits its structural problems.
 
 **Layers overlap by design.**
-L2 architecture begins at 50% of L1. L4 testing begins at 70% of L3. L6 operations begins at go-live per wave — not after the last wave closes. Compliance is embedded as a delivery dependency at each layer, not treated as an external requirement that arrives late.
+Architecture work starts before regulatory and legal work is complete, and testing starts before build is complete. L6 operations begins at go-live per wave — not after the last wave closes. Compliance is embedded as a delivery dependency at each layer, not treated as an external requirement that arrives late.
 
 **Compliance is a delivery task, not a dependency.**
 MiCA, DORA, and per-country regulatory requirements are gate criteria — not external dependencies. Missing a compliance gate criterion blocks the gate. It does not simply delay it.
@@ -39,7 +39,7 @@ Multi-vendor coordination, SLA management, escalation ownership, and third-party
 **Change and incident management starts at L0.**
 A change management process that does not exist at L0 cannot be retrofitted at L5. Incident classification, escalation paths, and regulatory notification obligations must be defined before go-live — not after the first incident.
 
-**L7 is not the end. It is the operating state.**
+**L7 — Continuous Governance. It is not the end. It is the operating state.**
 Post-launch stability does not manage itself. L7 begins at go-live — not after the delivery team exits. Vendor SLA enforcement, regulatory reporting cadence, audit calendar, and the capacity to initiate new programs from a stable operational base require the same governance discipline as every layer that preceded it.
 
 ---
@@ -48,4 +48,3 @@ Post-launch stability does not manage itself. L7 begins at go-live — not after
 
 ---
 *Biljana Obradović · Concept360 · 2026*
-*RWA Execution Gap Methodology © Biljana Obradović · Concept360 · 2026*

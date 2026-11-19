@@ -75,11 +75,12 @@ If you are a regulated institution building a digital asset capability
 and the delivery complexity is starting to outpace the governance structure —
 that is where this work starts.
 
+→ [biljana.obradovic@concept360.io](mailto:biljana.obradovic@concept360.io)
 → [biljana.obradovic@concept360.rs](mailto:biljana.obradovic@concept360.rs)
 → [linkedin.com/in/biljana-obradovic-28390a8](https://linkedin.com/in/biljana-obradovic-28390a8)
 → [Start the conversation](https://biljanaobradovic-delivery.github.io/execution-gap-framework/#contact)
 
 ---
 
-*Part of the 7-Layer RWA Delivery Framework · Concept360 · 2026*
+*Part of the Execution Gap Framework™ · 8 Operational Layers (L0–L7) · Concept360 · 2026*
 *© Biljana Obradović · All rights reserved · For discussion purposes only*

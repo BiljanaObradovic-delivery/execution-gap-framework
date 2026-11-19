@@ -21,20 +21,20 @@ Standard DD does not look there.
 
 ## What Operational DD Looks Like
 
-A structured operational readiness assessment covers seven layers.
+A structured operational readiness assessment covers eight layers (L0–L7).
 Each layer has gate criteria — conditions that must be met before the next layer starts.
 Gaps at any layer are delivery risks, not technical risks.
 
 | Layer | What DD should verify |
 |---|---|
 | L0 — Operating Model | Is there a board-approved governance structure? Are decision rights defined? |
-| L1 — Regulatory & Legal | Is the CASP/VASP licence confirmed or on a credible timeline? Is the MLRO appointed? |
+| L1 — Regulatory & Legal | Is the CASP/VASP license confirmed or on a credible timeline? Is the MLRO appointed? |
 | L2 — Structure & Contracts | Are vendor MSAs signed? Is the SLA framework operational? |
 | L3 — Technical Architecture | Is the custody architecture documented and auditable? Are oracle dependencies mapped? |
 | L4 — Build & Audit | Has SC Audit #1 been completed? Is the DORA ICT third-party register in place? |
 | L5 — Integration & Testing | Have the three mandatory sign-offs been obtained? Is the rollback plan documented? |
 | L6 — Go-Live & Operations | Has the G-OPS gate been passed? Is the hypercare plan active? |
-| L7 — Post-Launch, Steady State & Continuity | Is there an operational continuity structure in place post go-live? |
+| L7 — Continuous Governance | Is there an operational continuity structure in place post go-live? |
 
 ---
 
@@ -70,11 +70,12 @@ If you are deploying capital into a regulated RWA program and need
 a structured operational readiness signal before commitment —
 that is what this assessment is built for.
 
+→ [biljana.obradovic@concept360.io](mailto:biljana.obradovic@concept360.io)
 → [biljana.obradovic@concept360.rs](mailto:biljana.obradovic@concept360.rs)
 → [linkedin.com/in/biljana-obradovic-28390a8](https://linkedin.com/in/biljana-obradovic-28390a8)
 → [Start the conversation](https://biljanaobradovic-delivery.github.io/execution-gap-framework/#contact)
 
 ---
 
-*Part of the 7-Layer RWA Delivery Framework · Concept360 · 2026*
+*Part of the Execution Gap Framework™ · 8 Operational Layers (L0–L7) · Concept360 · 2026*
 *© Biljana Obradović · All rights reserved · For discussion purposes only*

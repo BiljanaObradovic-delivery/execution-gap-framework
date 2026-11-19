@@ -8,7 +8,7 @@
 
 ## The Pattern
 
-The technology works. The licence is in progress or obtained.
+The technology works. The license is in progress or obtained.
 The governance layer does not exist yet.
 
 This is the most common operational gap in regulated tokenization platforms —
@@ -38,7 +38,7 @@ the first regulatory question, and the first operational incident.
 | L1 — Regulatory & Legal | Compliance embedded in legal, not in delivery. | First NCA question post-licensing |
 | L2 — Structure & Contracts | SLA framework exists. Escalation procedure does not. | First vendor underperformance |
 | L6 — Go-Live & Operations | Hypercare plan missing. KPI/KRI not defined. | First 30 days post go-live |
-| L7 — Post-Launch, Steady State & Continuity | No audit calendar. No vendor SLA review cadence. | First regulatory audit |
+| L7 — Continuous Governance | No audit calendar. No vendor SLA review cadence. | First regulatory audit |
 
 ---
 
@@ -74,11 +74,12 @@ multiplies the operational risk — it does not dilute it.
 If the platform is live — or close to live — and the governance layer is not keeping pace,
 that is where this work starts.
 
+→ [biljana.obradovic@concept360.io](mailto:biljana.obradovic@concept360.io)
 → [biljana.obradovic@concept360.rs](mailto:biljana.obradovic@concept360.rs)
 → [linkedin.com/in/biljana-obradovic-28390a8](https://linkedin.com/in/biljana-obradovic-28390a8)
 → [Start the conversation](https://biljanaobradovic-delivery.github.io/execution-gap-framework/#contact)
 
 ---
 
-*Part of the 7-Layer RWA Delivery Framework · Concept360 · 2026*
+*Part of the Execution Gap Framework™ · 8 Operational Layers (L0–L7) · Concept360 · 2026*
 *© Biljana Obradović · All rights reserved · For discussion purposes only*

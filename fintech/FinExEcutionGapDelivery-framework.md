@@ -1,4 +1,4 @@
-# 7 Layers — Fintech & Bank Execution Gap Program Delivery
+# 8 Operational Layers — Fintech & Bank Execution Gap Program Delivery
 
 ## Multi-Country, Multi-Vendor, Multi-Jurisdictions Implementation Framework
 
@@ -6,11 +6,11 @@
 
 ---
 
-> This framework adapts the 7 Operational Layers methodology for complex banking technology programs — core banking transformations, loan origination systems, CRM rollouts, and any multi-country, multi-vendor implementation. Layer 0 is shown with full gate detail. Layers 1–7 follow the same structure.
+> This framework adapts the Execution Gap Framework™ (8 Operational Layers, L0–L7) for complex banking technology programs — core banking transformations, loan origination systems, CRM rollouts, and any multi-country, multi-vendor implementation.
 
 ---
 
-## The 7 Layers — Bank & Fintech Adaptation
+## The 8 Operational Layers — Bank & Fintech Adaptation
 
 | # | Layer | What it covers | Where programs get stuck |
 | --- | --- | --- | --- |
@@ -20,4 +20,16 @@
 | 3 | **Technical Architecture** | Core system configuration, integration build, SIT, data migration pilot. SAST completed by vendor. | The last 20% takes longer than the first 80% combined — every time. Edge cases in credit policy per country. Integration edge cases under concurrent load. |
 | 4 | **Build & Audit** | UAT per wave, penetration test, performance test, parallel run, data migration test, DAST, regression. | Parallel run reveals that the system works — but doesn't match how people actually work. Three tests always started too late: pen test, DRP, data migration. |
 | 5 | **Integration & Testing** | Rollout plan, rollback plan, support rehearsal, training complete. Three sign-offs nobody tracks: Business Process Owner, Regulatory Reporting Dry Run, Vendor Support Transition. | Support team not rehearsed before go-live. Business process owners not signed off. Wave dependency not validated — one country's delay cascades. |
-| 6 | **Go-Live & Operations** | First transactions per country, smoke test (auto rollback i
+| 6 | **Go-Live & Operations** | First transactions per country, smoke test, wave activation, hypercare, BAU transition, KPI/KRI monitoring, change & incident management. | Hypercare plan missing. KPI/KRI not defined. |
+| 7 | **Continuous Governance** | Ongoing vendor governance, regulatory reporting, audit calendar, incident management, operational continuity planning. | No audit calendar. No vendor SLA review cadence. |
+
+---
+
+→ [biljana.obradovic@concept360.io](mailto:biljana.obradovic@concept360.io)
+→ [biljana.obradovic@concept360.rs](mailto:biljana.obradovic@concept360.rs)
+→ [linkedin.com/in/biljana-obradovic-28390a8](https://linkedin.com/in/biljana-obradovic-28390a8)
+
+---
+
+*Part of the Execution Gap Framework™ · 8 Operational Layers (L0–L7) · Concept360 · 2026*
+*© Biljana Obradović · All rights reserved · For discussion purposes only*
