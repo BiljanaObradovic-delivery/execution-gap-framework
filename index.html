@@ -4,17 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Concept360 — Biljana Obradović — The Execution Gap</title>
-<!-- concept360_v9.html — updated June 2026 -->
+<!-- concept360 GitHub Pages — interim cleanup 19 Nov 2026 (full site: concept360.io) -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --ink:   #0F1117;
     --paper: #F7F4EF;
-    --gold:  #C8960A;
+    --gold:  #7F5C00; /* gold text on light bg (WCAG 5.58) */
+    --gold-bright: #C8960A; /* dark bg, buttons */
     --gold2: #E8B020;
     --warm:  #E8E2D8;
     --mid:   #6B6560;
-    --light: #B8B0A4;
+    --light: #6B6560; /* was #B8B0A4 (failed WCAG on paper) */
     --rule:  rgba(15,17,23,0.12);
   }
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -39,7 +40,9 @@
   .hero-sub2 { font-size:14px; color:var(--light); line-height:1.7; max-width:440px; margin-bottom:48px; padding-left:22px; font-style:italic; }
   .hero-cta { display:flex; gap:16px; flex-wrap:wrap; }
   .btn-primary { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; padding:14px 28px; background:var(--ink); color:var(--paper); text-decoration:none; border:1px solid var(--ink); transition:all 0.2s; display:inline-block; }
-  .btn-primary:hover { background:var(--gold); border-color:var(--gold); color:var(--ink); }
+  .btn-primary:hover { background:var(--gold-bright); border-color:var(--gold-bright); color:var(--ink); }
+  .drift, .who, #compliancedebt { --gold:#C8960A; --light:#B8B0A4; }
+  .hero-title em, .framework-title em, .contact-title em { color:#9A6F00; }
   .btn-secondary { font-family:'DM Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; padding:14px 28px; background:transparent; color:var(--ink); text-decoration:none; border:1px solid var(--rule); transition:all 0.2s; display:inline-block; }
   .btn-secondary:hover { border-color:var(--ink); }
 
@@ -65,7 +68,7 @@
   .drift-item { padding:32px 24px; background:var(--ink); }
   .drift-icon { font-family:'DM Mono',monospace; font-size:10px; color:var(--gold); letter-spacing:0.1em; margin-bottom:16px; }
   .drift-title { font-size:14px; font-weight:500; color:var(--paper); margin-bottom:10px; line-height:1.4; }
-  .drift-desc { font-size:12px; color:rgba(247,244,239,0.4); line-height:1.6; }
+  .drift-desc { font-size:12px; color:rgba(247,244,239,0.5); line-height:1.6; }
 
   .scenarios-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(247,244,239,0.08); }
 
@@ -204,8 +207,9 @@
 <section class="hero" style="padding:0" id="gap">
   <div class="hero-left">
     <div class="hero-eyebrow">Concept360 · Biljana Obradović</div>
-    <h1 class="hero-title" style="font-size:clamp(28px,3.5vw,48px);">Closing the <em>Execution Gap</em><br>in Regulated Digital Finance</h1>
-    <p class="hero-subtitle">Helping CASP holders, fintechs and RWA platforms move from regulatory approval to operational readiness.</p>
+    <h1 class="hero-title" style="font-size:clamp(28px,3.5vw,48px);">Execution doesn’t end at <em style="white-space:nowrap;">go-live</em>.</h1>
+    <p class="hero-subtitle">We help institutions govern what happens next.</p>
+    <p style="font-size:15px;color:var(--mid);line-height:1.7;margin-bottom:16px;padding-left:22px;">Helping CASP holders, fintechs and RWA platforms move from regulatory approval to operational readiness.</p>
     <p style="font-size:15px;color:var(--mid);line-height:1.7;font-weight:600;margin-bottom:24px;padding-left:22px;border-left:2px solid rgba(200,150,10,0.4);">Every week without operational structure is another week of compliance debt accumulating — and closer to your first regulatory incident.</p>
     <div class="hero-cta">
       <a href="mailto:biljana.obradovic@concept360.rs" class="btn-primary">Start the Conversation</a>
@@ -214,9 +218,9 @@
   </div>
   <div class="hero-right">
     <div class="pain-label">Does this sound familiar?</div>
-    <div style="margin-bottom:12px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;color:rgba(247,244,239,0.45);">CASP holder · Tokenization platform · Regulated fintech · Infrastructure provider · VC deploying capital</div>
+    <div style="margin-bottom:12px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;color:rgba(247,244,239,0.5);">CASP holder · Tokenization platform · Regulated fintech · Infrastructure provider · VC deploying capital</div>
     <div class="pain-list">
-      <div class="pain-item"><span class="pain-dash">—</span><span class="pain-text">Licence obtained. Operations not ready.</span></div>
+      <div class="pain-item"><span class="pain-dash">—</span><span class="pain-text">License obtained. Operations not ready.</span></div>
       <div class="pain-item"><span class="pain-dash">—</span><span class="pain-text">Technology built. Governance missing.</span></div>
       <div class="pain-item"><span class="pain-dash">—</span><span class="pain-text">Vendors in place. Ownership unclear.</span></div>
       <div class="pain-item"><span class="pain-dash">—</span><span class="pain-text">Launched. Scaling failing.</span></div>
@@ -259,7 +263,7 @@
       <div style="padding:32px 28px;background:var(--ink);">
         <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;"><span style="display:block;width:20px;height:1px;background:var(--gold);"></span>Scenario 01</div>
         <div style="font-size:16px;font-weight:500;color:var(--paper);margin-bottom:8px;line-height:1.3;">CASP Readiness vs Operational Reality</div>
-        <div style="font-family:'DM Mono',monospace;font-size:10px;color:rgba(247,244,239,0.35);margin-bottom:16px;letter-spacing:0.03em;">Regulatory approval · Post-licensing · Operational build</div>
+        <div style="font-family:'DM Mono',monospace;font-size:10px;color:rgba(247,244,239,0.5);margin-bottom:16px;letter-spacing:0.03em;">Regulatory approval · Post-licensing · Operational build</div>
         <p style="font-size:13px;color:rgba(247,244,239,0.5);line-height:1.7;margin-bottom:20px;">Licensing progresses. The application described AML controls, onboarding workflows, custody structure, and governance model. Now all of it has to function in production — across vendors, operations, compliance, and delivery teams simultaneously. Regulatory approval and operational readiness rarely move at the same speed.</p>
         <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:0.04em;padding-top:16px;border-top:1px solid rgba(247,244,239,0.08);">→ Governance restructuring · Escalation ownership · Delivery-to-compliance alignment</div>
         <a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework/blob/main/rwa/casp_licensing_overview.md" target="_blank" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(200,150,10,0.6);text-decoration:none;margin-top:10px;display:block;">Read: CASP Licensing Overview →</a>
@@ -267,7 +271,7 @@
       <div style="padding:32px 28px;background:var(--ink);">
         <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;"><span style="display:block;width:20px;height:1px;background:var(--gold);"></span>Scenario 02</div>
         <div style="font-size:16px;font-weight:500;color:var(--paper);margin-bottom:8px;line-height:1.3;">Vendor Escalation Fragmentation</div>
-        <div style="font-family:'DM Mono',monospace;font-size:10px;color:rgba(247,244,239,0.35);margin-bottom:16px;letter-spacing:0.03em;">Multi-vendor delivery · Escalation drift · Governance gaps</div>
+        <div style="font-family:'DM Mono',monospace;font-size:10px;color:rgba(247,244,239,0.5);margin-bottom:16px;letter-spacing:0.03em;">Multi-vendor delivery · Escalation drift · Governance gaps</div>
         <p style="font-size:13px;color:rgba(247,244,239,0.5);line-height:1.7;margin-bottom:20px;">Multiple vendors. No unified escalation visibility. Each vendor manages its own SLA, its own reporting, its own definition of a blocker. Delivery continues around unresolved dependencies. By the time fragmentation becomes visible, it has already affected compliance timelines and readiness gates.</p>
         <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:0.04em;padding-top:16px;border-top:1px solid rgba(247,244,239,0.08);">→ Unified escalation layer · Dependency tracking · Vendor governance structure</div>
         <a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework/blob/main/rwa/Post-Licensing%20Operational%20Gaps.md" target="_blank" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(200,150,10,0.6);text-decoration:none;margin-top:10px;display:block;">Read: Post-Licensing Operational Gaps →</a>
@@ -275,9 +279,9 @@
       <div style="padding:32px 28px;background:var(--ink);">
         <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px;"><span style="display:block;width:20px;height:1px;background:var(--gold);"></span>Scenario 03</div>
         <div style="font-size:16px;font-weight:500;color:var(--paper);margin-bottom:8px;line-height:1.3;">Post-Go-Live Operational Instability</div>
-        <div style="font-family:'DM Mono',monospace;font-size:10px;color:rgba(247,244,239,0.35);margin-bottom:16px;letter-spacing:0.03em;">Go-live completed · Hypercare ended · KPIs deteriorating</div>
+        <div style="font-family:'DM Mono',monospace;font-size:10px;color:rgba(247,244,239,0.5);margin-bottom:16px;letter-spacing:0.03em;">Go-live completed · Hypercare ended · KPIs deteriorating</div>
         <p style="font-size:13px;color:rgba(247,244,239,0.5);line-height:1.7;margin-bottom:20px;">Go-live is completed. Hypercare ends. Operational KPIs begin to drift. The team that delivered the program is no longer the team running it — and the handover never produced the governance structures needed to sustain it. In regulated environments, operational instability becomes regulatory risk quickly.</p>
-        <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:0.04em;padding-top:16px;border-top:1px solid rgba(247,244,239,0.08);">→ Stabilisation governance · Hypercare control structure · Operational continuity</div>
+        <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:0.04em;padding-top:16px;border-top:1px solid rgba(247,244,239,0.08);">→ Stabilization governance · Hypercare control structure · Operational continuity</div>
         <a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework/blob/main/rwa/bankentrydigitalassets.md" target="_blank" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(200,150,10,0.6);text-decoration:none;margin-top:10px;display:block;">Read: Regulated Institution Entry →</a>
       </div>
     </div>
@@ -298,13 +302,13 @@
       </div>
     </div>
     <div>
-      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(247,244,239,0.4);margin-bottom:20px;">Where debt accumulates</div>
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(247,244,239,0.5);margin-bottom:20px;">Where debt accumulates</div>
       <div style="display:flex;flex-direction:column;gap:1px;">
         <div style="padding:16px 20px;background:rgba(247,244,239,0.04);display:flex;align-items:flex-start;gap:16px;">
           <span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);min-width:32px;padding-top:2px;">01</span>
           <div>
             <div style="font-size:13px;font-weight:500;color:var(--paper);">Governance debt</div>
-            <div style="font-size:11px;color:rgba(247,244,239,0.4);font-family:'DM Mono',monospace;margin-top:3px;">Unclear ownership · RACI not operationalized · Decision rights assumed</div>
+            <div style="font-size:11px;color:rgba(247,244,239,0.5);font-family:'DM Mono',monospace;margin-top:3px;">Unclear ownership · RACI not operationalized · Decision rights assumed</div>
             <div style="font-size:11px;color:rgba(200,150,10,0.6);font-family:'DM Mono',monospace;margin-top:5px;">→ Delayed decisions, unclear ownership, 3–6 months lost in execution</div>
           </div>
         </div>
@@ -312,15 +316,15 @@
           <span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);min-width:32px;padding-top:2px;">02</span>
           <div>
             <div style="font-size:13px;font-weight:500;color:var(--paper);">Compliance debt</div>
-            <div style="font-size:11px;color:rgba(247,244,239,0.4);font-family:'DM Mono',monospace;margin-top:3px;">Undocumented controls · Reporting gaps · Obligations tracked manually</div>
-            <div style="font-size:11px;color:rgba(200,150,10,0.6);font-family:'DM Mono',monospace;margin-top:5px;">→ Regulatory findings, increased scrutiny, potential licence suspension</div>
+            <div style="font-size:11px;color:rgba(247,244,239,0.5);font-family:'DM Mono',monospace;margin-top:3px;">Undocumented controls · Reporting gaps · Obligations tracked manually</div>
+            <div style="font-size:11px;color:rgba(200,150,10,0.6);font-family:'DM Mono',monospace;margin-top:5px;">→ Regulatory findings, increased scrutiny, potential license suspension</div>
           </div>
         </div>
         <div style="padding:16px 20px;background:rgba(247,244,239,0.04);display:flex;align-items:flex-start;gap:16px;">
           <span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);min-width:32px;padding-top:2px;">03</span>
           <div>
             <div style="font-size:13px;font-weight:500;color:var(--paper);">Vendor dependency debt</div>
-            <div style="font-size:11px;color:rgba(247,244,239,0.4);font-family:'DM Mono',monospace;margin-top:3px;">No escalation paths · SLA without enforcement · Single points of failure</div>
+            <div style="font-size:11px;color:rgba(247,244,239,0.5);font-family:'DM Mono',monospace;margin-top:3px;">No escalation paths · SLA without enforcement · Single points of failure</div>
             <div style="font-size:11px;color:rgba(200,150,10,0.6);font-family:'DM Mono',monospace;margin-top:5px;">→ SLA breaches without escalation path, unexpected costs, operational drift</div>
           </div>
         </div>
@@ -328,7 +332,7 @@
           <span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);min-width:32px;padding-top:2px;">04</span>
           <div>
             <div style="font-size:13px;font-weight:500;color:var(--paper);">Operational resilience debt</div>
-            <div style="font-size:11px;color:rgba(247,244,239,0.4);font-family:'DM Mono',monospace;margin-top:3px;">No incident classification · Audit evidence created retroactively · DORA gaps</div>
+            <div style="font-size:11px;color:rgba(247,244,239,0.5);font-family:'DM Mono',monospace;margin-top:3px;">No incident classification · Audit evidence created retroactively · DORA gaps</div>
             <div style="font-size:11px;color:rgba(200,150,10,0.6);font-family:'DM Mono',monospace;margin-top:5px;">→ Inability to prove controls during DORA/MiCA audit</div>
           </div>
         </div>
@@ -336,7 +340,7 @@
           <span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);min-width:32px;padding-top:2px;">05</span>
           <div>
             <div style="font-size:13px;font-weight:500;color:var(--paper);">Data & control debt</div>
-            <div style="font-size:11px;color:rgba(247,244,239,0.4);font-family:'DM Mono',monospace;margin-top:3px;">No PoR baseline · KYC/AML gaps · Reporting without audit trail</div>
+            <div style="font-size:11px;color:rgba(247,244,239,0.5);font-family:'DM Mono',monospace;margin-top:3px;">No PoR baseline · KYC/AML gaps · Reporting without audit trail</div>
             <div style="font-size:11px;color:rgba(200,150,10,0.6);font-family:'DM Mono',monospace;margin-top:5px;">→ Reconciliation failures, investor reporting errors, loss of trust</div>
           </div>
         </div>
@@ -366,7 +370,7 @@
         </div>
         <div style="margin-bottom:24px;padding:14px 16px;background:var(--warm);border-left:2px solid var(--gold);">
           <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">Output includes</div>
-          <div style="font-size:12px;color:var(--mid);line-height:1.7;">Execution Gap Score · Governance maturity assessment · Risk heatmap · Vendor dependency map · Prioritized gap analysis · 90-day operational roadmap</div>
+          <div style="font-size:12px;color:var(--mid);line-height:1.7;">Vendor dependency map · Prioritized gap analysis · 90-day operational roadmap</div>
         </div>
         <a href="mailto:biljana.obradovic@concept360.rs" class="btn-primary">Start the Conversation</a>
         <div style="margin-top:16px;display:flex;gap:20px;">
@@ -414,11 +418,11 @@
       </div>
       <div style="padding:16px 20px;background:white;border-left:3px solid var(--gold);">
         <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">L1 — Regulatory & Legal</div>
-        <div style="font-size:13px;color:var(--ink);line-height:1.6;margin-bottom:10px;">Is your AML/CTF programme formally approved by the board, implemented, and actively maintained — not just drafted?</div>
+        <div style="font-size:13px;color:var(--ink);line-height:1.6;margin-bottom:10px;">Is your AML/CTF program formally approved by the board, implemented, and actively maintained — not just drafted?</div>
         <div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--light);">☐ Yes &nbsp;&nbsp; ☐ Partially &nbsp;&nbsp; ☐ No</div>
       </div>
       <div style="padding:16px 20px;background:white;border-left:3px solid var(--gold);">
-        <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">L7 — Post-Launch, Steady State & Continuity</div>
+        <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">L7 — Continuous Governance</div>
         <div style="font-size:13px;color:var(--ink);line-height:1.6;margin-bottom:10px;">Is there a named owner for every regulatory reporting obligation — not a team, not a shared inbox, but a named individual accountable for each submission and its deadline?</div>
         <div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--light);">☐ Yes &nbsp;&nbsp; ☐ Partially &nbsp;&nbsp; ☐ No</div>
       </div>
@@ -434,9 +438,9 @@
   <div class="framework-grid">
     <div>
       <h2 class="framework-title">The Execution Gap Framework —<br>7 Operational Layers.<br><em>One structured path.</em></h2>
-      <p class="framework-desc">The framework maps the critical dependencies, sequencing decisions, and governance structures required to move from concept, licence, or platform build to institutional-scale operations.</p>
+      <p class="framework-desc">The framework maps the critical dependencies, sequencing decisions, and governance structures required to move from concept, license, or platform build to institutional-scale operations.</p>
       <p class="framework-desc">Every regulated program that stalls does so at a specific layer. The framework makes that visible — before it becomes a failure.</p>
-      <p class="framework-note">The framework applies equally to RWA tokenization programs and regulated fintech environments. The failure patterns are the same. The sequencing logic is the same. Both contexts are structured across seven operational layers — from Operating Model through to Post-Launch, Steady State & Continuity.</p>
+      <p class="framework-note">The framework applies equally to RWA tokenization programs and regulated fintech environments. The failure patterns are the same. The sequencing logic is the same. Both contexts are structured across seven operational layers — from Operating Model through to Continuous Governance.</p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:20px;border:1px solid var(--rule);">
         <div style="padding:20px;border-right:1px solid var(--rule);">
           <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--light);margin-bottom:12px;">Before</div>
@@ -462,14 +466,6 @@
       <p class="framework-standards">Aligned with PRINCE2 · ITIL · Agile · SAFe delivery standards</p>
       <a href="#compliancedebt" style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:inline-block;margin-top:12px;">→ Where execution debt accumulates by layer</a>
       <div style="margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);">
-        <a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework/blob/main/ExecutionGapFramework_7Layers.md" target="_blank" style="padding:16px;background:var(--warm);text-decoration:none;display:block;transition:background 0.2s;" onmouseover="this.style.background='#e0d9cf'" onmouseout="this.style.background='var(--warm)'">
-          <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">RWA Delivery</div>
-          <div style="font-size:12px;font-weight:500;color:var(--ink);">7 Layers — Full Reference →</div>
-        </a>
-        <a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework/blob/main/METHODOLOGY.md" target="_blank" style="padding:16px;background:var(--warm);text-decoration:none;display:block;transition:background 0.2s;" onmouseover="this.style.background='#e0d9cf'" onmouseout="this.style.background='var(--warm)'">
-          <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Methodology</div>
-          <div style="font-size:12px;font-weight:500;color:var(--ink);">Delivery Methodology →</div>
-        </a>
         <a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework/blob/main/fintech/FinExEcutionGapDelivery-framework.md" target="_blank" style="padding:16px;background:var(--warm);text-decoration:none;display:block;transition:background 0.2s;" onmouseover="this.style.background='#e0d9cf'" onmouseout="this.style.background='var(--warm)'">
           <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Fintech & Bank Delivery</div>
           <div style="font-size:12px;font-weight:500;color:var(--ink);">Core Banking Adaptation →</div>
@@ -523,7 +519,7 @@
       </div>
       <div style="display:grid;grid-template-columns:52px 1fr 1fr;gap:16px;padding:14px 0;align-items:start;">
         <div class="layer-num">L7</div>
-        <div><div class="layer-name">Post-Launch, Steady State & Continuity</div><div class="layer-risk">Vendor SLA · Regulatory reporting · Audits</div></div>
+        <div><div class="layer-name">Continuous Governance</div><div class="layer-risk">Vendor SLA · Regulatory reporting · Audits</div></div>
         <div style="font-size:12px;color:var(--mid);line-height:1.5;">Operations that scale without the delivery team still holding it together</div>
       </div>
     </div>
@@ -536,9 +532,9 @@
   <p style="font-size:14px;color:var(--mid);line-height:1.8;max-width:600px;margin-bottom:40px;">Each document covers a specific delivery workstream at teaser level. Full detail is available on engagement.</p>
   <div class="deepdives-grid" style="grid-template-columns:repeat(2,1fr);">
     <div class="deepdive-card" id="res-casp" style="padding:20px 22px;gap:8px;">
-      <div class="deepdive-tag">CASP Licence Holders</div>
+      <div class="deepdive-tag">CASP License Holders</div>
       <div class="deepdive-title">Post-Licensing Operational Readiness</div>
-      <div class="deepdive-desc">You have the licence. The regulatory clock is running. Operational infrastructure, governance, and controls are still missing.<br>What you risk: post-launch findings, delayed reporting, unclear ownership when the supervisor calls.<br>What we deliver: 2–3 week Operational Readiness Assessment · Compliance Debt Score + Gap Map · 90-day remediation roadmap.</div>
+      <div class="deepdive-desc">You have the license. The regulatory clock is running. Operational infrastructure, governance, and controls are still missing.<br>What you risk: post-launch findings, delayed reporting, unclear ownership when the supervisor calls.<br>What we deliver: 2–3 week Operational Readiness Assessment · Compliance Debt Gap Map · 90-day remediation roadmap.</div>
       <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:4px;">
         <a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework/blob/main/rwa/casp_licensing_overview.md" target="_blank" class="deepdive-link">Read: Post-Licensing Operational Readiness →</a>
         <a href="#who-casp" class="deepdive-link" style="color:var(--light);">→ Built For</a>
@@ -556,7 +552,7 @@
     <div class="deepdive-card" id="res-vc" style="padding:20px 22px;gap:8px;">
       <div class="deepdive-tag">VC &amp; Investment Funds</div>
       <div class="deepdive-title">Capital Deployment Readiness Check</div>
-      <div class="deepdive-desc">Deploying capital into RWA and regulated programs without visibility into operational readiness is one of the fastest ways to destroy value.<br>A rapid assessment that gives you: Execution Debt Score · Investment Risk Flag (Green / Amber / Red) · Top execution risks before you wire the money.</div>
+      <div class="deepdive-desc">Deploying capital into RWA and regulated programs without visibility into operational readiness is one of the fastest ways to destroy value.<br>A rapid assessment that shows the top execution risks before you wire the money.</div>
       <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:4px;">
         <a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework/blob/main/vc_dd_readiness.md" target="_blank" class="deepdive-link">Read: VC Operational Due Diligence Framework →</a>
         <a href="#who-vc" class="deepdive-link" style="color:var(--light);">→ Built For</a>
@@ -584,12 +580,12 @@
   <div class="section-rule"><span class="section-label">Built For</span></div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(247,244,239,0.08);margin-bottom:1px;">
     <div style="padding:32px 28px;background:var(--ink);" id="who-casp">
-      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">CASP Licence Holders</div>
-      <div style="font-size:14px;font-weight:500;color:var(--paper);margin-bottom:8px;line-height:1.4;">Licence obtained. Operational infrastructure not yet built. Regulatory clock running.</div>
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">CASP License Holders</div>
+      <div style="font-size:14px;font-weight:500;color:var(--paper);margin-bottom:8px;line-height:1.4;">License obtained. Operational infrastructure not yet built. Regulatory clock running.</div>
       <div style="font-size:12px;color:rgba(247,244,239,0.55);margin-bottom:14px;">Operational readiness assessment + governance setup</div>
       <div style="display:flex;gap:20px;flex-wrap:wrap;">
         <a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework/blob/main/rwa/casp_licensing_overview.md" target="_blank" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(200,150,10,0.7);text-decoration:none;">Read: CASP Licensing Overview →</a>
-        <a href="#res-casp" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(247,244,239,0.3);text-decoration:none;">→ Resources</a>
+        <a href="#res-casp" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(247,244,239,0.5);text-decoration:none;">→ Resources</a>
       </div>
     </div>
     <div style="padding:32px 28px;background:var(--ink);" id="who-platforms">
@@ -598,7 +594,7 @@
       <div style="font-size:12px;color:rgba(247,244,239,0.55);margin-bottom:14px;">Operating model design + vendor governance structure</div>
       <div style="display:flex;gap:20px;flex-wrap:wrap;">
         <a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework/blob/main/rwa/Post-Licensing%20Operational%20Gaps.md" target="_blank" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(200,150,10,0.7);text-decoration:none;">Read: Post-Licensing Operational Gaps →</a>
-        <a href="#res-platforms" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(247,244,239,0.3);text-decoration:none;">→ Resources</a>
+        <a href="#res-platforms" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(247,244,239,0.5);text-decoration:none;">→ Resources</a>
       </div>
     </div>
   </div>
@@ -607,20 +603,20 @@
       <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">VC & Investment Funds</div>
       <div style="font-size:14px;font-weight:500;color:var(--paper);margin-bottom:8px;line-height:1.4;">Deploying capital into regulated programs. Need structured operational readiness signal before commitment.</div>
       <div style="font-size:12px;color:rgba(247,244,239,0.55);margin-bottom:14px;">Capital Deployment Readiness Check — 1–2 days · fixed scope · one deliverable</div>
-      <div style="font-size:11px;color:rgba(247,244,239,0.35);font-family:'DM Mono',monospace;margin-bottom:14px;">Execution Debt Score · Investment Risk Flag</div>
+      <div style="font-size:11px;color:rgba(247,244,239,0.5);font-family:'DM Mono',monospace;margin-bottom:14px;">Top execution risks before capital deployment</div>
       <div style="display:flex;gap:20px;flex-wrap:wrap;">
         <a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework/blob/main/vc_dd_readiness.md" target="_blank" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(200,150,10,0.7);text-decoration:none;">Read: Operational DD Framework →</a>
-        <a href="#res-vc" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(247,244,239,0.3);text-decoration:none;">→ Resources</a>
+        <a href="#res-vc" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(247,244,239,0.5);text-decoration:none;">→ Resources</a>
       </div>
     </div>
     <div style="padding:32px 28px;background:var(--ink);" id="who-consulting">
       <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Consulting & Advisory Firms</div>
       <div style="font-size:14px;font-weight:500;color:var(--paper);margin-bottom:8px;line-height:1.4;">Fractional Delivery — embedded end-to-end on complex regulated fintech or digital asset engagements.</div>
       <div style="font-size:12px;color:rgba(247,244,239,0.55);margin-bottom:14px;">Delivery governance · compliance architecture · operational readiness · PMO establishment · cross-functional coordination · escalation management</div>
-      <div style="font-size:11px;color:rgba(247,244,239,0.35);font-family:'DM Mono',monospace;margin-bottom:14px;">2–3 days/week · 3–6 month engagement · B2B · Remote · EMEA</div>
+      <div style="font-size:11px;color:rgba(247,244,239,0.5);font-family:'DM Mono',monospace;margin-bottom:14px;">2–3 days/week · 3–6 month engagement · B2B · Remote · EMEA</div>
       <div style="display:flex;gap:20px;flex-wrap:wrap;">
         <a href="mailto:biljana.obradovic@concept360.rs" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(200,150,10,0.7);text-decoration:none;">Start the conversation →</a>
-        <a href="#res-consulting" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(247,244,239,0.3);text-decoration:none;">→ Resources</a>
+        <a href="#res-consulting" style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(247,244,239,0.5);text-decoration:none;">→ Resources</a>
       </div>
     </div>
   </div>
@@ -650,15 +646,16 @@
       <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:14px;">Certifications</div>
       <div class="cert-grid">
         <div class="cert-item">PRINCE2® Practitioner</div>
-        <div class="cert-item">CEBP™ — Blockchain Professional</div>
         <div class="cert-item">ISO/IEC 27001 Lead Auditor</div>
-        <div class="cert-item">CBPM™ — Blockchain Product Mgr</div>
+        <div class="cert-item">CEBP™ — Certified Enterprise Blockchain Professional</div>
+        <div class="cert-item">CBPM™ — Certified Blockchain Product Manager</div>
+        <div class="cert-item">CDACE™ — Certified Digital Assets Compliance Expert</div>
+        <div class="cert-item">CRWATP™ — Certified RWA Tokenization Professional</div>
+        <div class="cert-item">CAIAM™ — Certified AI Agent Manager</div>
         <div class="cert-item">ITIL V4 Foundation</div>
-        <div class="cert-item">CDACE™ — Digital Assets Compliance</div>
         <div class="cert-item">Agile · Lean Practitioner</div>
         <div class="cert-item">Fintech Expert™</div>
         <div class="cert-item">AWS Cloud Practitioner</div>
-        <div class="cert-item">Certified AI Agent Management</div>
         <div class="cert-item" style="grid-column:1/-1;">Member, 101 Blockchains Advisory Council</div>
       </div>
       <div style="margin-top:32px;">
@@ -673,7 +670,7 @@
       <div style="margin-bottom:40px;">
         <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:20px;">Background — TradFi to Digital Assets</div>
         <div style="display:flex;flex-direction:column;">
-          <div style="display:flex;align-items:flex-start;gap:16px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:13px;"><span style="color:var(--light);min-width:200px;line-height:1.5;">CMS lifecycle & card processing</span><span style="color:var(--gold);flex-shrink:0;">→</span><span style="color:var(--mid);line-height:1.5;">Tokenised asset settlement architecture</span></div>
+          <div style="display:flex;align-items:flex-start;gap:16px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:13px;"><span style="color:var(--light);min-width:200px;line-height:1.5;">CMS lifecycle & card processing</span><span style="color:var(--gold);flex-shrink:0;">→</span><span style="color:var(--mid);line-height:1.5;">Tokenized asset settlement architecture</span></div>
           <div style="display:flex;align-items:flex-start;gap:16px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:13px;"><span style="color:var(--light);min-width:200px;line-height:1.5;">PSP licensing (Central Bank of Ireland)</span><span style="color:var(--gold);flex-shrink:0;">→</span><span style="color:var(--mid);line-height:1.5;">MiCA CASP program governance</span></div>
           <div style="display:flex;align-items:flex-start;gap:16px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:13px;"><span style="color:var(--light);min-width:200px;line-height:1.5;">Enterprise IAM governance · 30+ EU systems</span><span style="color:var(--gold);flex-shrink:0;">→</span><span style="color:var(--mid);line-height:1.5;">Wallet & identity controls architecture</span></div>
           <div style="display:flex;align-items:flex-start;gap:16px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:13px;"><span style="color:var(--light);min-width:200px;line-height:1.5;">ISO 27001 audit structures</span><span style="color:var(--gold);flex-shrink:0;">→</span><span style="color:var(--mid);line-height:1.5;">On-chain compliance reporting frameworks</span></div>
@@ -685,7 +682,7 @@
         <div class="about-firm-head" style="font-size:16px;letter-spacing:0.08em;">Concept360</div>
         <div class="about-firm-est">Established 2013</div>
         <p class="about-firm-text">Concept360 helps regulated fintech companies and investors turn regulatory approval into sustainable, audit-ready operations.</p>
-        <p class="about-firm-text" style="margin-top:12px;">We specialize in closing the Execution Gap — the dangerous difference between having a licence and actually being able to operate under continuous regulatory scrutiny.</p>
+        <p class="about-firm-text" style="margin-top:12px;">We specialize in closing the Execution Gap — the dangerous difference between having a license and actually being able to operate under continuous regulatory scrutiny.</p>
         <p class="about-firm-text" style="margin-top:12px;">With deep experience in complex program delivery, compliance architecture, and operational readiness, we deliver practical governance solutions that reduce risk and accelerate safe scaling.</p>
         <p class="about-firm-text" style="margin-top:16px;font-style:italic;">Every engagement starts with a diagnostic. Not a proposal.</p>
         <div style="margin-top:24px;display:flex;gap:24px;flex-wrap:wrap;">
@@ -705,7 +702,9 @@
     <a href="mailto:biljana.obradovic@concept360.rs" class="btn-primary">Start the Conversation</a>
   </div>
   <div class="contact-right">
+    <div class="contact-item"><span class="contact-label">Email</span><a href="mailto:biljana.obradovic@concept360.io" class="contact-value">biljana.obradovic@concept360.io</a></div>
     <div class="contact-item"><span class="contact-label">Email</span><a href="mailto:biljana.obradovic@concept360.rs" class="contact-value">biljana.obradovic@concept360.rs</a></div>
+    <div class="contact-item"><span class="contact-label">Website</span><a href="https://concept360.io" target="_blank" class="contact-value">concept360.io</a></div>
     <div class="contact-item"><span class="contact-label">LinkedIn</span><a href="https://linkedin.com/in/biljana-obradovic-28390a8" target="_blank" class="contact-value">linkedin.com/in/biljana-obradovic-28390a8</a></div>
     <div class="contact-item"><span class="contact-label">GitHub</span><a href="https://github.com/BiljanaObradovic-delivery/execution-gap-framework" target="_blank" class="contact-value">execution-gap-framework</a></div>
     <div class="contact-item"><span class="contact-label">Availability</span><span class="contact-value">Remote-first · Quarterly on-site · B2B</span></div>
