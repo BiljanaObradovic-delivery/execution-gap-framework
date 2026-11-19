@@ -9,16 +9,18 @@ Every regulated program — regardless of technology stack, jurisdiction, or sca
 
 ## Layer Overview
 
-| Layer | RWA Tokenization | Regulated Fintech / Core Banking |
-|---|---|---|
-| **L0 — Strategy & Value Definition** | Business case, board approval, governance, RACI, OKR framework, budget management, custody model selection | Business case, wave structure, country sequencing, governance, RACI, OKR framework, budget management |
-| **L1 — Regulatory & Business Foundation** | MiCA/CASP, DORA, eWpG, BaFin/NCA licensing, MLRO appointment, AML program, multi-jurisdiction mapping, SPV incorporation, legal opinion, token classification | PSD2, per-country regulatory mapping, local banking law, DORA, AML program, MLRO |
-| **L2 — Solution Architecture** | SC design, oracle selection, custody architecture, chain configuration, API governance, vendor MSA, SLA framework, decision tracking | Core system design, middleware strategy, API architecture, vendor contracts, SLA framework, integration agreements, decision tracking, assumption log |
-| **L3 — Build & Integration** | SC development, KYC/KYT integration, SAST, platform and custody integration build | Core build, per-country integration across core banking system and middleware, KYC/AML pipeline, vendor governance |
-| **L4 — Validation & Control** | SC audit #1 and #2, pen test, DAST, DORA ICT third-party register, ISO 27001 gap, end-to-end testing, settlement, PoR baseline, UAT | Pen test, DORA ICT, security audit, UAT per wave, end-to-end integration |
-| **L5 — Readiness & Transition** | Rollback plan, gate sign-off, G-OPS gate, go-live readiness evidence | Gate sign-off, rollback plan, regulatory test filing, wave readiness |
-| **L6 — Operational Execution** | Hypercare, KPI/KRI monitoring, change & incident management, DORA monitoring, regulatory reporting | Wave activation, hypercare, BAU transition, KPI/KRI monitoring, change & incident management |
-| **L7 — Continuous Governance** | Vendor SLA management, regulatory reporting calendar, audit schedule, incident & change management, new project initiation from operations | Ongoing vendor governance, regulatory reporting, audit calendar, incident management, operational continuity planning |
+| Layer | Core objective | Scope — RWA tokenization | Scope — regulated fintech / core banking |
+|---|---|---|---|
+| **L0 — Strategy & Value Definition** | Decide whether the program should exist. | Business case · mandate · governance · RACI · budget · custody principle | Business case · wave structure · country sequencing · governance · RACI · budget |
+| **L1 — Regulatory & Business Foundation** | Ensure the program can legally exist. | Regulatory pathway · MLRO · AML · licensing · classification · banking | PSD2 · per-country regulatory mapping · local banking law · DORA · AML program · MLRO |
+| **L2 — Solution Architecture** | Design before commitments become expensive. | Token · custody · vendors · SPV · IAM · data · economics · reconciliation · time | Core system design · middleware · API architecture · vendor contracts and SLAs · integration agreements · decision tracking |
+| **L3 — Build & Integration** | Build and integrate with controlled execution. | Smart contracts · integrations · KYC/AML · custody · IAM · keys · reconciliation | Core build · per-country integration across core banking and middleware · KYC/AML pipeline |
+| **L4 — Validation & Control** | Validate that controls operate in practice. | Validation types · security audit · penetration test · DORA · audit trail · independent sign-off | Penetration test · DORA ICT · security audit · end-to-end integration validation |
+| **L5 — Readiness & Transition** | Authorize and prepare for production. | UAT · Proof of Reserves · key ceremony · rollback · go-live sign-offs · market readiness | UAT per wave · go-live sign-offs · rollback plan · regulatory test filing · wave readiness |
+| **L6 — Operational Execution** | Stabilize under real production conditions. | G-OPS Gate · hypercare · KPI/KRI · incident management · BAU handover | Wave activation · hypercare · KPI/KRI monitoring · incident management · BAU handover |
+| **L7 — Continuous Governance** | Govern, improve, and sustain. | Audit calendar · vendor management · regulatory reporting · drift monitoring · liquidity review | Ongoing vendor governance · regulatory reporting · audit calendar · incident management · operational continuity |
+
+Each layer closes with a named decision gate that requires documented evidence, not verbal confirmation. Ranges and scopes are illustrative, not exhaustive: specific evidence requirements and gate criteria depend on program type, jurisdiction, and regulatory classification.
 
 ---
 
