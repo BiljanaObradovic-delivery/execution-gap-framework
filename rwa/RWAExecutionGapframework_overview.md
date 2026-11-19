@@ -1,4 +1,4 @@
-# RWA Execution Gap Framework — Overview
+# Execution Gap Framework™ — RWA Tokenization Programs
 **Concept360 · Biljana Obradović · © 2026**
 
 > This document describes the framework scope at teaser level.
@@ -16,20 +16,22 @@ The Execution Gap opens quietly — often before anyone names it as a problem.
 
 ---
 
-## Framework Scope — 7 Operational Layers
+## Framework Scope — 8 Operational Layers
 
-Every RWA program requires structured delivery across seven layers, in sequence. The sequence matters. A layer skipped does not disappear — it relocates the problem to a later, more expensive stage.
+Every RWA program requires structured delivery across eight operational layers, L0 to L7. The sequence matters. A layer skipped does not disappear — it relocates the problem to a later, more expensive stage.
 
-| Layer | Focus |
+| Layer | Scope — RWA tokenization |
 |---|---|
-| L0 — Operating Model | Governance, RACI, OKR framework, budget management, decision rights |
-| L1 — Regulatory & Legal | MiCA/CASP, DORA, eWpG, MLRO, AML program, multi-jurisdiction |
-| L2 — Structure & Contracts | SPV, token classification, vendor MSA, SLA framework, decision tracking |
-| L3 — Technical Architecture | SC design, custody architecture, oracle selection, vendor governance |
-| L4 — Build & Audit | SC development, SC audit, pen test, DORA ICT, SAST/DAST |
-| L5 — Integration & Testing | End-to-end, settlement, PoR baseline, UAT, rollback plan, gate sign-off |
-| L6 — Go-Live & Operations | G-OPS gate, hypercare, KPI/KRI monitoring, change & incident management |
-| L7 — Post-Launch, Steady State & Continuity | Vendor SLA management, regulatory reporting, audit calendar, operational continuity |
+| **L0 — Strategy & Value Definition** | Business case · mandate · governance · RACI · budget · custody principle |
+| **L1 — Regulatory & Business Foundation** | Regulatory pathway · MLRO · AML · licensing · classification · banking |
+| **L2 — Solution Architecture** | Token · custody · vendors · SPV · IAM · data · economics · reconciliation · time |
+| **L3 — Build & Integration** | Smart contracts · integrations · KYC/AML · custody · IAM · keys · reconciliation |
+| **L4 — Validation & Control** | Validation types · security audit · penetration test · DORA · audit trail · independent sign-off |
+| **L5 — Readiness & Transition** | UAT · Proof of Reserves · key ceremony · rollback · go-live sign-offs · market readiness |
+| **L6 — Operational Execution** | G-OPS Gate · hypercare · KPI/KRI · incident management · BAU handover |
+| **L7 — Continuous Governance** | Audit calendar · vendor management · regulatory reporting · drift monitoring · liquidity review |
+
+Scopes are illustrative, not exhaustive. Each layer closes with a named decision gate that requires documented evidence, not verbal confirmation.
 
 ---
 
@@ -61,7 +63,7 @@ The complete framework — available upon qualified engagement — includes:
 - Vendor ecosystem — 20 categories with key vendors, lead times, selection criteria, and RACI per operating model
 - Reporting architecture — 12 streams with named owners, deadlines, and escalation paths
 - Gate criteria, red flags, and go/no-go conditions per layer
-- 5 operating models with team structure, go-live timeline, TVL threshold, and best-fit criteria
+- 5 operating models with team structure, go-live timeline, and best-fit criteria
 - Hypercare plan — Days 1–30 post go-live, escalation matrix, handover gate
 
 *Access by qualified engagement only.*
@@ -72,11 +74,11 @@ The complete framework — available upon qualified engagement — includes:
 
 If you are building or scaling a regulated RWA operation and the operational layer is not keeping up — that is what this framework was built for.
 
-→ [Execution Gap Assessment](https://biljanaobradovic-delivery.github.io/execution-gap-framework/#packages)
+→ [Execution Gap Assessment](https://biljanaobradovic-delivery.github.io/execution-gap-framework/#services)
 → [Start the conversation](https://biljanaobradovic-delivery.github.io/execution-gap-framework/#contact)
 
 ---
 
-*RWA Execution Gap Methodology © Biljana Obradović · Concept360 · 2026*
-→ [biljana.obradovic@concept360.rs](mailto:biljana.obradovic@concept360.rs)
+*Execution Gap Framework™ © Biljana Obradović · Concept360 · 2026*
+→ [biljana.obradovic@concept360.io](mailto:biljana.obradovic@concept360.io)
 → [linkedin.com/in/biljana-obradovic-28390a8](https://linkedin.com/in/biljana-obradovic-28390a8)
